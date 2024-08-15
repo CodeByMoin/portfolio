@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== UNICONS ===============-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">M<span>K</span></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active-link" >Home</a></li>
+                    <li><a href="#about" class="nav__link" >About</a></li>
+                    <li><a href="#skills" class="nav__link" >Skills</a></li>
+                    <li><a href="#portfolio" class="nav__link" >Portfolio</a></li>
+                    <li><a href="#contact" class="nav__link" >Contact</a></li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ui uil-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__socials">
+                <a href="https://github.com/CodeByMoin" target="_blank" class="nav__social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/khan-mohammad-moin/" target="_blank" class="nav__social-link">
+                <i class="uil uil-linkedin"></i>
+                </a>
+
+
+                <a href="https://www.instagram.com/theofficial_moin/" target="_blank" class="nav__social-link">
+                <i class="uil uil-instagram"></i>
+                </a>
+            </div>
+
+            <div class="nav__btns">
+                <a href="#contact" class="nav__link-btn btn">Let's Talk</a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home" id="home">
+        <div class="home__container  container grid">
+            <div class="home__content">
+                <span class="home__subtitle">
+                    Welcome To My World
+                </span>
+                <h1 class="home__title">
+                    Hi, I'm Khan Moin <span><br>Student</span>
+                </h1>
+            </div>
+            
+            <img src="assets/img/home.jpg" alt="" class="home__img">
+            <a href="assets/resume/Resume.pdf" download="Moin_CV.pdf">
+                <button type="button" class="btn nav__link-btn" id="resume_download_btn">Download My CV</button>
+            </a>
+        </div>
+      </section>
+
+      <!--=============== ABOUT ===============-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+            <img src="assets/img/about.jpg" alt="" class="about__img">
+            <div class="about__content">
+                <h2 class="section__title">About Me</h2>
+                <p class="about__desription">I am a computer engineering student with a passion for technology and innovation. I enjoy tackling challenging projects and am always eager to learn new skills that enhance my understanding of software development and systems design. My goal is to make a positive impact in the tech industry through creative problem-solving and continuous learning..</p>
+                <div class="tabs__btns">
+                    <span class="tabs__btn tab__active" data-target="#education">Education</span>
+                    <span class="tabs__btn" data-target="#certification">Certifications</span>
+                    <span class="tabs__btn" data-target="#post_of_resp">Postions of Responsibility</span>
+                </div>
+                <div class="tabs__content">
+                    <div class="tabs__item tab__active" data-content id="education">
+                        <div class="tabs__data grid">
+                            <p class="tabs__description">
+                                <span>B.E. in Computer Engineering</span> | <span>Anjuman-I-Islam's Kalsekar Technical Campus, New Panvel.</span><span>CGPA - 9.46</span>
+                            </p>
+                            <p class="tabs__description">
+                                <span>HSC</span> | <span>Queen Mary's Jr. College, Mumbra</span> <span>84.33%</span>
+                            </p>
+                            <p class="tabs__description">
+                                <span>SSC</span> | <span>Symbiosis Convent High School, Mumbra</span> <span>94.80%</span>
+                            </p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="tabs__item" data-content id="certification">
+                        <div class="tabs__data grid">
+                            <p class="tabs__description">
+                                <span>OpenEDG Python Institute: Programming with Python</span> - <span>LinkedIn</span>
+                            </p>
+                            <a href="assets/certificates/OpenEDG_Python_Certificate.pdf" download="Moin_Certificate_Python.pdf">
+                                <button type="button" class="btn certificate-btn" id="certificate_download__btn">Download</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tabs__item" data-content id="post_of_resp">
+                        <div class="tabs__data grid">
+                            <p class="tabs__description">
+                                <span>Member</span> | <span>Programmers Club, AIKTC</span> <span>Organized hackathons & conducted sessions for college students onWeb Development related topics..</span>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </section>
+
+      <!--=============== SKILLS ===============-->
+      <section class="section" id="skills">
+        <h1>Skills</h1>
+        <p>Here are some of my skills.</p>
+        <div class="skills-container">
+            <div class="category frontend">
+                <h2>Frontend</h2>
+                <div class="skills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Bootstrap</span>
+                </div>
+            </div>
+            <div class="category backend">
+                <h2>Backend</h2>
+                <div class="skills">
+                    <span>Python</span>
+                </div>
+            </div>
+            <div class="category android">
+                <h2>Android</h2>
+                <div class="skills">
+                    <span>Java</span>
+                </div>
+            </div>
+            <div class="category others">
+                <h2>Others</h2>
+                <div class="skills">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Vercel</span>
+                    <span>VS Code</span>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--=============== PORTFOLIO ===============-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">My Latest Projects</h2>
+        <p class="section__description">Crafted with Passion and Precision</p>
+
+        <div class="portfolio__container container grid">
+            <a href="https://github.com/CodeByMoin/Voice-Controlled-Assistant-Jarvis-" target="_blank">
+                <div class="portfolio__item">
+                    <img src="assets/projects/voice-assistant.png" alt="" class="portfolio__img" id="voice-assistant"/>
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Voice Assistant</h3>
+                        <p class="portfolio__subtitle">Python</p>
+                        <p class="portfolio__description">This project is a voice-controlled AI assistant named "Jarvis," which executes user commands like opening websites, fetching weather/news, and interacting with a generativeAI model..</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+      </section>
+
+      <!--=============== CONTACT ===============-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+            <div class="contact__content">
+                <h2 class="section__title">Contact Me</h2>
+
+                <p class="contact__description" id="contact-description">
+                    I am available for freelance work. Connect with me via phone: <a href="tel:+918424853802"> +91842483802</a> or email: <a href="mailto:khanmoin3757@gmail.com">khanmoin3757@gmail.com</a>
+                </p>
+
+                <form action="" class="contact__form" id="contact-form">
+                    <div class="contact__form-input">
+                        <input type="text" name="name" placeholder="Your Name" class="contact__input" id="contact-name"/>
+                    </div>
+
+                    <div class="contact__form-input">
+                        <input type="email" name="email" placeholder="Your e-mail" class="contact__input" id="contact-email"/>
+                    </div>
+
+                    <div class="contact__form-input">
+                        <input type="text" name="subject" placeholder="Write a Subject" class="contact__input" id="contact-subject"/>
+                    </div>
+
+                    <div class="contact__form-input">
+                        <textarea name="message" id="contact-message" class="contact__input textarea" placeholder="Your Message"></textarea>
+                    </div>
+
+                    <input type="submit" value="Submit" class="btn" />
+
+                    <p class="error__message" id="error-message">Error</p>
+                </form>
+            </div>
+
+            <img src="assets/img/contact.jpg" alt="" class="contact__img">
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <a href="index.html" class="footer__logo">M<span>K</span>
+            </a>
+
+            <div class="footer__socials">
+                <a href="https://github.com/CodeByMoin" target="_blank" class="footer__social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/khan-mohammad-moin/" target="_blank" class="footer__social-link">
+                <i class="uil uil-linkedin"></i>
+                </a>
+
+
+                <a href="https://www.instagram.com/theofficial_moin/" target="_blank" class="footer__social-link">
+                <i class="uil uil-instagram"></i>
+                </a>
+            </div>
+
+            <p class="footer__copyright">&copy; 2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-angle-up scrollup__icon"></i>
+    </a>
+    <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
