@@ -117,30 +117,49 @@ errorMessage = document.getElementById('error-message');
 const sendEmail = (e) => {
     e.preventDefault();
 
-    // check if the field has a value
-    if(contactName.value === '' || contactEmail.value === '' || contactMessage.value === '' || contactSubject.value === '') {
-        // show message
+    // Check if the field has a value
+    if (contactName.value === '' || contactEmail.value === '' || contactMessage.value === '' || contactSubject.value === '') {
+        // Show message
         errorMessage.textContent = 'Write all the input fields';
     } else {
-        // serviceID - templateID - #form - publickey
-        emailjs.sendForm('process.env.emailjs_serviceID', 'process.env.emailjs_templateID', '#contact-form', 'process.env.emailjs_publickey').then(() => {
-            // show message and add color, window + dot to open emoji
+        // Prepare the data to send
+        const data = {
+            contactName: contactName.value,
+            contactEmail: contactEmail.value,
+            contactSubject: contactSubject.value,
+            contactMessage: contactMessage.value
+        };
+
+        // Send data to the serverless function
+        fetch('/api/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(result => {
+            // Show success message
             errorMessage.classList.add('color-first');
-            errorMessage.textContent = 'Message sent ✔️';
-        
-            // remove message after 5 seconds
+            errorMessage.textContent = result.success || 'Message sent ✔️';
+            
+            // Remove message after 5 seconds
             setTimeout(() => {
                 errorMessage.textContent = '';
             }, 5000);
-        }, (error) => {
-            alert('OOPs! SOMETHING WENT WRONG...', error);
-        });
 
-        // clear input fields
-        contactName.value = '';
-        contactEmail.value = '';
-        contactSubject.value = '';
-        contactMessage.value = '';
+            // Clear input fields
+            contactName.value = '';
+            contactEmail.value = '';
+            contactSubject.value = '';
+            contactMessage.value = '';
+        })
+        .catch(error => {
+            // Handle error
+            errorMessage.textContent = 'Oops! Something went wrong...';
+            console.error('Error:', error);
+        });
     }
 };
 
