@@ -346,11 +346,15 @@ body::-webkit-scrollbar {
 }
 
 .tabs__description span:nth-child(2) {
+  display: block;
   font-weight: var(--weight-500);
 }
 
-.tabs__description span:last-child {
-  display: block;
+.tab__des {
+  font-weight: var(--weight-500);
+}
+
+.tab__marks {
   font-weight: var(--weight-600);
 }
 
