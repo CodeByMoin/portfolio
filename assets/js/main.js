@@ -131,7 +131,7 @@ const sendEmail = (e) => {
         };
 
         // Send data to the serverless function
-        fetch('/api/send-email', {
+        fetch('assets/api/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
