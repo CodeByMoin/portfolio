@@ -342,6 +342,16 @@ body::-webkit-scrollbar {
 .tabs__btn,
 .tabs__description span:first-child {
   font-weight: var(--weight-500);
+  color: var(--first-color);
+}
+
+.tabs__description span:nth-child(2) {
+  font-weight: var(--weight-500);
+}
+
+.tabs__description span:last-child {
+  display: block;
+  font-weight: var(--weight-600);
 }
 
 .tabs__btn {
@@ -364,10 +374,6 @@ body::-webkit-scrollbar {
 
 .tabs__data {
   row-gap: 1rem;
-}
-
-.tabs__description span:last-child {
-  display: block;
 }
 
 .certificate-btn {
