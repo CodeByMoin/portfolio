@@ -325,6 +325,7 @@ body::-webkit-scrollbar {
 
 .about__img {
   border-radius: var(--radius);
+  background-color: var(--body-color);
 }
 
 .about__description {
@@ -582,6 +583,10 @@ body::-webkit-scrollbar {
   border-radius: var(--radius);
   font-size: var(--smaller-font-size);
   margin-bottom: 1.25rem;
+}
+
+.contact__img {
+  background-color: var(--container-color);
 }
 
 .textarea {
