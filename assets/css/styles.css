@@ -587,6 +587,7 @@ body::-webkit-scrollbar {
 
 .contact__img {
   background-color: var(--container-color);
+  border-radius: var(--radius);
 }
 
 .textarea {
