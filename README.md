@@ -1,6 +1,3 @@
-Here’s the README file in full code format, enclosed in a single code block:
-
-```markdown
 # Portfolio Website
 
 Welcome to my portfolio website! This is a personal website showcasing my skills, projects, and experiences as a computer engineering student. The site includes sections for an introduction, skills, portfolio projects, and a contact form. The website is designed to be fully responsive, with smooth navigation and a modern UI.
@@ -111,4 +108,3 @@ Feel free to connect with me via:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
