@@ -307,6 +307,41 @@ body::-webkit-scrollbar {
   border: 0.75rem solid var(--container-color);
 }
 
+/* Add revolving shadow animation to the home image */
+.home__img-shadow {
+  position: relative;
+  z-index: 1;
+}
+
+.home__img-shadow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  box-shadow: 0px 0px 30px 5px hsl(350, 98%, 64%);
+  animation: rotate-shadow 5s linear infinite;
+}
+
+@keyframes rotate-shadow {
+  0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+      box-shadow: 0px 0px 30px 5px hsl(350, 98%, 64%);
+  }
+  50% {
+      box-shadow: 0px 0px 30px 15px hsl(350, 98%, 64%);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+      box-shadow: 0px 0px 30px 5px hsl(350, 98%, 64%);
+  }
+}
+
+
 #resume_download_btn {
   position: relative;
   top: -7.5rem;
