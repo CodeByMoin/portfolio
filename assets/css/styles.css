@@ -305,7 +305,7 @@ body::-webkit-scrollbar {
   height: 420px;
   border-radius: 50%;
   border: 0.75rem solid var(--container-color);
-  box-shadow: 0rem 0rem 1rem 0.5rem hsl(350, 98%, 64%);
+  box-shadow: 0rem 0rem 1rem 0.5rem var(--first-color);
 }
 
 #resume_download_btn {
@@ -463,12 +463,13 @@ body::-webkit-scrollbar {
 .skills span:hover {
   background-color: var(--first-color);
   border: 2px solid var(--first-color);
+  color: black;
   cursor: pointer;
 }
 
 .category:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0rem 0rem 1rem 0.2rem var(--first-color);
 }
 
 /*=============== WORK ===============*/
