@@ -308,6 +308,7 @@ body::-webkit-scrollbar {
   box-shadow: 0rem 0rem 1rem 0.5rem var(--first-color);
 }
 
+
 #resume_download_btn {
   position: relative;
   top: -7.5rem;
@@ -497,7 +498,7 @@ body::-webkit-scrollbar {
 .portfolio__item::after {
   content: '';
   inset: 0;
-  background: linear-gradient(180deg, transparent, black);
+  background-color: var(--body-color);
   opacity: 0;
 }
 
