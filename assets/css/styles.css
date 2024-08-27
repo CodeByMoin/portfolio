@@ -908,6 +908,11 @@ body::-webkit-scrollbar {
   .footer__copyright {
     justify-self: center;
   }
+
+  .portfolio__data {
+    inset-inline: 6rem;
+    bottom: 6rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -924,6 +929,11 @@ body::-webkit-scrollbar {
   #resume_download_btn {
     display: block;
     top: 14rem;
+  }
+
+  .portfolio__data {
+    inset-inline: 3rem;
+    bottom: 1rem;
   }
 }
 
@@ -944,8 +954,8 @@ body::-webkit-scrollbar {
   }
 
   .portfolio__data {
-    inset-inline: 1rem;
-    bottom: 1rem;
+    inset-inline: 0rem;
+    bottom: 0rem;
   }
 
 }
